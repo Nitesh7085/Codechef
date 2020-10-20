@@ -1,10 +1,5 @@
 for t in range(int(input())):
     H, P = map(int,input().split())
-    while(H>P and P!=0):
-        H = abs(P - H)
-        P = P//2
-        
-    if(H<=P):
-        print(1)
-    else:
-        print(0)
+    while H>P and P!=0:
+        H, p = abs(P - H),P//2
+   print(1) if H <= P else print(0)
